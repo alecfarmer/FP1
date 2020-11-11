@@ -70,7 +70,7 @@ async function displayPlayers() {
     let playersDiv = document.getElementById("player-list");
     playersDiv.innerHTML = "";
 
-    for(i in playersJSON) {
+    for(let i in playersJSON) {
         let player = playersJSON[i];
         playersDiv.append(getPlayerInfo(player));
     }
